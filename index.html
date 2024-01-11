@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biscoito da Sorte</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <style>
+        @font-face {
+
+            font-family: Biscoito;
+            src: url('Super Peach.ttf');
+
+        }
+    </style>
+    <div id="arrayPalavras">
+        <h3>Escolha uma opção para jogar</h3>
+        <select id="selecionar">
+            <option>Selecione uma opção</option>
+            <option>Seu ano será de muita sorte</option>
+            <option>Hoje é o seu dia de sorte</option>
+            <option>Você ganhou um milhão!</option>
+            <option>Você vai conseguir, tenha fé!"</option>
+            <option>Já deu um beijo na sua mãe hoje?</option>
+            <option>Sabia que quem estuda mais tem mais chance de conseguir?</option>
+            <option>Você é muito precioso(a)</option>
+            <option>Agradeça sempre</option>
+            <option>Diga sempre: eu sou feliz</option>
+            <option>Você vai ter um filho</option>
+            <option>Você é perfeito e muito precioso</option>
+        </select>
+        <h4>Regras do jogo</h4>
+        <p id="regras">Você têm 3 tentativas de cliques no botão ou 3 palavras de sua escolha</p>
+    </div>
+    <div id="errou">Você errou! Tente outra vez.</div>
+    <div class="container-sm">
+        <div id="space" wid="50rem">
+            <h1 class="animacao">BISCOITO DA SORTE</h1>
+            <p class="paragrafo">HOJE É UM NOVO DIA!</p>
+            <strong>Clique no botão</strong>
+
+            <img src="img\pacotesfundo.png" id="package">
+            <img src="img\biscoitosfundo.png" id="biscoito" name="biscoito">
+
+            <div id="imgBiscoito"></div>
+
+            <button type="btn" id="playReset">Reiniciar</button>
+            <button type="btn" id="btnPlay">veja a sua sorte</button>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script src="biscoito.js"></script>
+    <!--
+const myArray = [                     //(Math.random() * 20)
+    "Seu ano será de muita sorte",
+    "Hoje é o seu dia de sorte. Você ganhou um milhão!",
+    "Você vai conseguir, tenha fé!",
+    "Já deu um beijo na sua mãe hoje?",
+    "Sabia que quem estuda mais tem mais chance de conseguir?",
+    "Você é muito precioso(a)",
+    "Agradeça sempre",
+    "Diga sempre: eu sou feliz",
+    'Você vai ter um filho',
+    "Você é perfeito e muito precioso"
+];
+
+const getRandomNumberInclusive = (min, max) => 
+Math.floor(Math.random() * (max - min + 1)) + min
+
+const getMyArray = () =>
+ myArray[getRandomNumberInclusive(0, myArray.length - 1)]
+
+console.log(getMyArray);
+
+const play = document.getElementById("btnplay");
+const reset = document.getElementById("playReset");
+
+
+    
+function changeSentence(e) {
+    
+    const play = document.getElementById("btnPlay");
+    const reset = document.getElementById("playReset");
+    document.querySelector("h2").innerHTML = getMyArray;
+
+    if (click) {
+        document.querySelector(".package").classList.add("hide")
+        play.classList.add("hide")
+        document.querySelector(".hide").classList.remove("hide")
+        reset.classList.remove("display")
+       
+        
+      
+    }
+
+   else{
+
+    document.querySelector(".package").classList.remove("hide")
+    play.classList.remove("hide")
+    document.querySelector(".hide").classList.add("hide")
+    reset.classList.add("hide")
+   
+    
+
+   }
+
+}
+
+
+/*
+play.addEventListener("click", changeSentence(Math.random([1]))
+  .shift(0, 1)
+)
+
+
+
+
+playReset.addEventListener('click', function () {
+    document.querySelector(".package").classList.remove("hide")
+    document.querySelector(".hide").classList.add("hide")
+
+})-->
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+* {
+    padding: 0%;
+    margin: 0%;
+
+}
+
+::-webkit-scrollbar {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Biscoito', sans-serif;
+}
+
+#space {
+    margin: -29rem auto 0rem auto;
+    display: grid;
+    justify-content: center;
+
+}
+
+h3 {
+    margin-top: 200px;
+    color: #630f0f;
+    margin-left: 40px;
+    word-spacing: 1.5px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+select {
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+    color: #630f0f;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+#arrayPalavras {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+#arrayPalavras option {
+    width: 8rem;
+    word-spacing: 1.5px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-left: 20px;
+    display: flexbox;
+    color: #630f0f;
+}
+
+
+h4 {
+    color: #630f0f;
+    margin-left: 40px;
+    word-spacing: 1.5px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+#regras {
+    width: 14rem;
+
+    color: #630f0f;
+    margin-left: 0px;
+    text-align: justify;
+    word-spacing: 1.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    display: flex;
+}
+
+
+
+
+.animacao {
+    margin: 4rem auto 0rem auto;
+    font-family: fantasy;
+    color: darkorange;
+    font-size: 3rem;
+    text-align: center;
+    animation-name: animacao;
+    animation-timing-function: step-start;
+    animation-duration: 3s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+
+#errou {
+    margin: -14rem auto 0rem auto;
+    font-family: fantasy;
+    color: darkorange;
+    font-size: 3rem;
+    text-align: center;
+    display:none;
+}
+p,
+strong {
+    margin: 1rem auto 0rem auto;
+    font-size: 1rem;
+    font-family: 'Biscoito', sans-serif;
+    font-style: initial;
+    text-align: center;
+    color: darkcyan;
+    font-size: 2rem;
+
+}
+
+h2 {
+    margin: -13rem auto 0rem auto;
+    font-size: 1rem;
+    font-family: 'Biscoito', sans-serif;
+    font-style: initial;
+    text-align: center;
+    color: #570a0a;
+    font-size: 2rem;
+    display: none;
+}
+
+.paragrafo {
+    animation-name: paragrafo;
+    animation-timing-function: step-start;
+    animation-duration: 3s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+
+#package {
+    width: 15.5rem;
+    margin: -25% auto 0% auto;
+    display: block;
+    padding-top: 200px;
+}
+
+#biscoito {
+    width: 500px;
+    margin: -60% auto 0% auto;
+    display: none;
+
+}
+
+#imgBiscoito {
+    width: 250px;
+    background-color: #fff;
+    opacity: .7;
+    border-radius: 10px;
+    height: 6vh;
+    margin: -82% auto 0% auto;
+    display: none;
+    font-size: 1rem;
+    font-family: Verdana, Tahoma, sans-serif, sans-serif;
+    color: #630f0f;
+    text-align: center;
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+
+
+#btnPlay {
+    border-radius: 30px;
+
+    background-color: darkorange;
+    color: darkcyan;
+    font-size: 2rem;
+    font-family: 'Biscoito', sans-serif;
+    margin-top: -10%;
+    display: block;
+}
+
+
+#playReset {
+    width: 250px;
+    height: 6vh;
+    border-radius: 30px;
+    background-color: darkorange;
+    color: darkcyan;
+    font-size: 2rem;
+    font-family: 'Biscoito', sans-serif;
+    margin-top: -20%;
+    margin-left: 20%;
+    display: none;
+}
+
+@keyframes animacao {
+    0% {
+        transform: scale(1%);
+    }
+
+    50% {
+        transform: scale(200%)
+    }
+
+    100% {
+        transform: scale(90%)
+    }
+
+}
+
+@keyframes paragrafo {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: scale(1%)
+    }
+
+    75% {
+        transform: scale(100%)
+    }
+
+    100% {
+        transform: translateX(20vw -20vw);
+    }
+
+}
+
+@media only screen and (min-device-width: 20rem) and (max-device-width: 30rem) {
+    h1 {
+        margin: 4rem auto 0rem auto;
+        scale: 100%;
+        font-size: 1rem;
+    }
+
+    img {
+        margin: -150px auto 0% auto;
+    }
+}
